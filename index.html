@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My One Page Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* Navbar */
+nav{
+    background:#333;
+    color:white;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    background:linear-gradient(to right,#4facfe,#00f2fe);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+/* Sections */
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.services{
+    background:#f4f4f4;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+form{
+    max-width:400px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#333;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero" id="home">
+<div>
+<h1>Welcome to My Website</h1>
+<p>This is a simple one-page HTML project</p>
+</div>
+</div>
+
+<!-- About -->
+<section id="about">
+<h2>About Us</h2>
+<p>
+We create simple websites using HTML, CSS, and JavaScript.
+This is a basic example of a single page website layout.
+</p>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+<h2>Our Services</h2>
+
+<div class="service-box">
+<div class="card">
+<h3>Web Design</h3>
+<p>Modern and responsive website designs.</p>
+</div>
+
+<div class="card">
+<h3>Development</h3>
+<p>Clean and efficient web development.</p>
+</div>
+
+<div class="card">
+<h3>SEO</h3>
+<p>Improve your website visibility online.</p>
+</div>
+</div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Us</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 My Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
