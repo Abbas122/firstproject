@@ -12,17 +12,17 @@ jobs:
       - name: check out code
         run:  echo "code has come"
   build:
-      runs-on: ubuntu-latest
-     steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: build the code
         run:  echo "code has build"
   test:
-     runs-on: ubuntu-latest
-     steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: test the code
         run:  echo "code has test"
   deploye:
       runs-on: ubuntu-latest
-     steps:
+    steps:
       - name: deploye the build
         run:  echo "deploye the "
