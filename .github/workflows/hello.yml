@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: this is first steps 
         run: echo "this is first steps"
+        run python --version
 
       - name: this is the second steps
         run:  echo "this is the second steps"
