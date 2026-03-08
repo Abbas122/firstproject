@@ -3,8 +3,10 @@ name: PHP CI
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
+    paths:
+      - '**.html'
+      - '**.php'
+      - '**.yml'
 
 jobs:
   test:
