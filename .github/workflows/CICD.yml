@@ -1,28 +1,30 @@
 name: CICD
 
 on:
-# this "workflow_dispatch:" below state need to your action 
+  # This allows you to run the workflow manually
   workflow_dispatch:
-    
+
 jobs:
-  
   code:
-     runs-on: ubuntu-latest
-     steps:
-      - name: check out code
-        run:  echo "code has come"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        run: echo "Code has come"
+
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: build the code
-        run:  echo "code has build"
+      - name: Build the code
+        run: echo "Code has built"
+
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: test the code
-        run:  echo "code has test"
-  deploye:
-      runs-on: ubuntu-latest
+      - name: Test the code
+        run: echo "Code has been tested"
+
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - name: deploye the build
-        run:  echo "deploye the "
+      - name: Deploy the build
+        run: echo "Deploy the build"
