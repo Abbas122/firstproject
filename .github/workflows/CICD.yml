@@ -8,15 +8,17 @@ jobs:
   code:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        run: echo "Code has come"
-
+    - name: Checkout repository
+      uses: actions/checkout@v4
   build:
     runs-on: ubuntu-latest
     needs: code
     steps:
       - name: Build the code
         run: echo "Code has built"
+    
+      - name: Check the list of file
+        run: ls ls
 
   test:
     runs-on: ubuntu-latest
