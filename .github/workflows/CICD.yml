@@ -18,7 +18,7 @@ jobs:
         run: echo "Code has built"
     
       - name: Check the list of file
-        run: ls ls
+        run: ls -a
 
   test:
     runs-on: ubuntu-latest
