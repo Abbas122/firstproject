@@ -5,7 +5,8 @@ on:
     branches: [main]
   # This allows you to run the workflow manually
  # workflow_dispatch:
-   path: '**.html'
+    paths: 
+      - '**.html'
    
 jobs:
   code:
