@@ -1,0 +1,16 @@
+name: hello
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  task:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: this is first steps 
+        run: echo "this is first steps"
+
+      - name: this is the second steps
+        run:  echo "this is the second steps"
